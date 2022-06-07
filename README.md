@@ -100,3 +100,5 @@ new = np.asarray(y_test)
 confusion_matrix(predictions,y_test)
 
 print(classification_report(predictions,y_test))
+
+
