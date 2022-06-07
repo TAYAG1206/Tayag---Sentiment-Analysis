@@ -13,8 +13,7 @@ Tayag---Sentiment-Analysis
   import plotly.tools as tls
   import plotly.express as px
   fig = px.histogram(df, x="Score")
-  fig.update_traces(marker_color="green",marker_line_color='rgb(0,100,0)',
-                  marker_line_width=1.5)
+  fig.update_traces(marker_color="green",marker_line_color='rgb(0,100,0)',marker_line_width=1.5)
   fig.update_layout(title_text='Product Score')
   fig.show()
 
@@ -57,8 +56,7 @@ Tayag---Sentiment-Analysis
   df['sentimentt'] = df['sentiment'].replace({-1 : 'negative'})
   df['sentimentt'] = df['sentimentt'].replace({1 : 'positive'})
   fig = px.histogram(df, x="sentimentt")
-  fig.update_traces(marker_color="indianred",marker_line_color='rgb(139,0,0)',
-                  marker_line_width=1.5)
+  fig.update_traces(marker_color="indianred",marker_line_color='rgb(139,0,0)',marker_line_width=1.5)
   fig.update_layout(title_text='Product Sentiment')
   fig.show()
 
